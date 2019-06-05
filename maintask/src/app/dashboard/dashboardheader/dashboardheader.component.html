@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="row bg-dark ">
+  <div class="logo text-danger mt-3 "> <h2>ZENEFITS</h2></div>
+  <div class="col-4"></div>
+    <div class="col-6 p-3  ">
+<ul class="nav text-white">
+  <li class="nav-item">
+    <a class="nav-link ml-5" routerLink="">APPLICATION</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link ml-5" routerLink="">WELLCOME</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link ml-5" routerLink="">SETTINGS</a>
+  </li>
+</ul>
+    </div>
+  </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <mat-drawer-container class="example-container">
+         
+        
+        <mat-drawer mode="side" opened> <nav class="nav flex-column">
+            <a class="nav-link text-white " routerLink="/">EMPLOYEE</a>
+            <a class="nav-link text-white" routerLink="/dashboard/list">EMPLOYEE LIST</a>
+            <a class="nav-link text-white" routerLink="/dashboard/edit">EMPLOYEE EDIT</a>
+            <a class="nav-link text-white" routerLink="/dashboard/view">EMPLOYEE VIEW</a>
+            <a class="nav-link text-white" routerLink="/dashboard/add">EMPLOYEE ADD</a>
+          </nav>
+        </mat-drawer>
+        <mat-drawer-content>
+           
+          <router-outlet></router-outlet>
+        </mat-drawer-content>
+      </mat-drawer-container> 
+    </div>
+  </div>
+</div>
+</div>

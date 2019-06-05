@@ -1,0 +1,76 @@
+<div class="container-fluid edit">
+    <div class="conatiner">
+      <div class="row bg-secondary pt-2">
+        <div class="col-6 pl-5">
+    <button class="btn btn-info mb-2 ml-4">View Employee</button>
+        </div>
+        <div class="col-6 pl-5">
+            <button class="btn btn-danger mb-2 ml-5 ">Edit/View Employee</button>
+         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <mat-card class="example-card mt-3">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image text-center "></div>
+                <mat-card-title>NewEmployee</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+  
+              </mat-card-content>
+              <mat-card-actions>
+              </mat-card-actions>
+            </mat-card>
+            <button class="bg-secondary ml-5" mat-button>UploadPhoto</button>
+      </div>
+    <div class="col-4 mt-3">
+      <div class="form-group">
+        <form action="" class="example-form" [formGroup]="logindata">
+          First Name:
+          <input type="text" class="form-control" placeholder="" name="firstname" formControlName="firstname" [ngClass]="{'is-invalid':logindata.get('firstname').invalid}"/>
+          <div *ngIf="logindata.get('firstname').dirty && logindata.get('firstname').invalid" class="invalid-feedback">please enter firstname</div>
+          Last Name:
+          <input type="text" class="form-control" placeholder="" name="firstname" formControlName="firstname" [ngClass]="{'is-invalid':logindata.get('firstname').invalid}"/>
+          <div *ngIf="logindata.get('firstname').dirty && logindata.get('firstname').invalid" class="invalid-feedback">please enter firstname</div>
+          Email:
+          <input type="text" class="form-control" placeholder="" name="firstname" formControlName="firstname" [ngClass]="{'is-invalid':logindata.get('firstname').invalid}"/>
+          <div *ngIf="logindata.get('firstname').dirty && logindata.get('firstname').invalid" class="invalid-feedback">please enter firstname</div>
+          Employee Status:
+          <input type="text" class="form-control" placeholder="" name="firstname" formControlName="firstname" [ngClass]="{'is-invalid':logindata.get('firstname').invalid}"/>
+          <div *ngIf="logindata.get('firstname').dirty && logindata.get('firstname').invalid" class="invalid-feedback">please enter firstname</div>
+        </form>
+      </div>
+    </div>
+      <div class="col-4 mt-3">
+        <div class="form-group">
+          <form action="" class="example-form" [formGroup]="logindata">
+            Middle Name:
+            <input type="text" class="form-control" placeholder="" name="firstname" formControlName="firstname" [ngClass]="{'is-invalid':logindata.get('firstname').invalid}"/>
+            <div *ngIf="logindata.get('firstname').dirty && logindata.get('firstname').invalid" class="invalid-feedback">please enter firstname</div>
+            Employee ID:
+            <input type="text" class="form-control" placeholder="" name="firstname" formControlName="firstname" [ngClass]="{'is-invalid':logindata.get('firstname').invalid}"/>
+            <div *ngIf="logindata.get('firstname').dirty && logindata.get('firstname').invalid" class="invalid-feedback">please enter firstname</div>
+            Employee Type:
+            <input type="text" class="form-control" placeholder="" name="firstname" formControlName="firstname" [ngClass]="{'is-invalid':logindata.get('firstname').invalid}"/>
+            <div *ngIf="logindata.get('firstname').dirty && logindata.get('firstname').invalid" class="invalid-feedback">please enter firstname</div>
+            Date of Hire:
+            <input type="text" class="form-control" placeholder="" name="firstname" formControlName="firstname" [ngClass]="{'is-invalid':logindata.get('firstname').invalid}"/>
+            <div *ngIf="logindata.get('firstname').dirty && logindata.get('firstname').invalid" class="invalid-feedback">please enter firstname</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="container">
+      <div class="row ">
+        <div class="col-9 "></div>
+        <div class="col-2 ">
+          <button class="btn btn-primary  crt">CreateEmployee</button>
+        </div>
+      </div>
+    </div>
+    </div>

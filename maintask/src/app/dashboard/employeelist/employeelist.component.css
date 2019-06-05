@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+  }
+  .list{
+    background-image: url('../../../assets/fimg2.jpg');
+    height: 520px;
+    background-size: cover;
+  }
+  .list2{
+    background-color: transparent;
+  }
